@@ -1,0 +1,46 @@
+{% load static %}
+<html>
+    <head>
+        <!-- <link rel="stylesheet"href="sign.css"> -->
+        <title> Signup</title>
+        <style>
+            body{
+                background-image: url("https://expertphotography.b-cdn.net/wp-content/uploads/2018/07/nature-photography-green-tree-plant-leaves.jpg");
+                background-size: 100%;
+                background-repeat: no-repeat;
+                opacity: 100%;
+                border: 2px;
+                }
+                #sign{
+                    font-size: xxx-large;
+                    color: blueviolet;
+                }
+        </style>
+
+    </head>
+    <body>      
+        <center>
+        <form method="POST" action="" >
+            {% csrf_token %}
+            <div class="container">
+        <h1 id="sign"><center>Ragistration Form</center></h1>
+            <label id="user">Name</label>
+            <input type="text"Placeholder="Plz enter FullName"id="name" name="name"><br><br>
+            <label id="user">Mob Number</label> 
+            <input type="number"Placeholder="Enter Mobile Number"id="number" name="number" max length="10"> <br><br>
+            <label id="user">State</label> 
+            <input type="text"Placeholder="Enter State"id="State" name="State" ><br><br>
+            <label id="user">District</label> 
+            <input type="text"Placeholder="Enter District"id="district" name="district" ><br><br>
+            <label id="user">Village</label> 
+            <input type="text"Placeholder="Enter Village"id="village" name="village" ><br><br>
+            <label id="user">Password</label>
+            <input type="text"Placeholder="Plz Enter Password"id="password" name="password"><br><br>
+            <label id="user">Conform Password</label>
+            <input type="text"Placeholder="Plz Enter Conform Password"id="c_pass" name="c_pass">
+            <button type="submit">Submit</button>
+        </div>
+        </center>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+{% comment %} 
+<html>
+    <head>
+
+        <link rel="stylesheet"href="anmol.css">
+        <title> login</title>
+        
+        <style>
+body{
+    background-image:url("https://i.pinimg.com/originals/79/fd/d1/79fdd17253b569a417e980a99aecd978.jpg") ;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   opacity: 100%;
+   border: 2px;
+   }
+   .container{
+    padding-bottom: 20px;
+    margin-top: 13%;
+
+}
+#login{
+    font-size: xxx-large;
+    color: yellow;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+
+    
+   
+}
+#user{
+    font-size: xx-large;
+    color: rgb(240, 190, 12);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+
+}
+#username{
+    font-size: larger;
+    border: 5px solid teal;
+    border-radius: 8px;
+    padding: 5;
+}
+#password{
+    font-size: larger;
+    border: 5px solid teal;
+    border-radius: 8px;
+    padding: 5;
+
+}
+#btn{
+    font-size: large;
+    background-color: darkblue;
+    color: white;
+    border-radius: 10px;
+
+}
+#forget{
+    padding-right: 10%;
+}
+#create{
+    padding-left: 15%;
+    font-size: medium;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <form action="">
+        <center>
+        <div class="container">
+        <h1 id="login"><center>Login Page</center></h1>
+            <label id="user">Username</label><br><br>
+            <input type="text" placeholder="Enter your username" id="username"><br><br>
+            <label id="user">Password</label><br><br>
+            <input type="password"placeholder="Enter your password" id="password"><br>
+            <a href=""id="forget" button="onclick">Forget Password</a><br><br>
+            <button type="onclick"id="btn">Login</button><br>
+            <a href="http://127.0.0.1:8000/contact/"id="create" button="onclick">Create new account</a>
+        </div>
+        </center>
+        </form>
+    </body>
+</html> {% endcomment %}
+
+
+
+
+
+
+
+<!DOCTYPE>
+<html>
+    <body>
+        <head>
+            <title>ContactUs</title>
+        </head>
+        <h1>user form</h1>
+        <form method='POST'>
+            {% csrf_token %}
+            <h1>Your name:<input type="text" placeholder="Enter Your Name" name="name"></h1>
+            <h1>Phone No:<input type="text" placeholder="Enter your Number" name="number"></h1>
+            <button type="submit">SUBMIT</button>
+
+        </form>
+    </body> 
+
+
+
+

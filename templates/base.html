@@ -1,0 +1,30 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <style>
+    <title> {% block title %} {% endblock title %}</title>
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+  }
+  </style>
+  </head>
+  <body>
+  
+  <ul>
+    <li><a href="/admin">Admin</a></li>
+    <li><a href="/services">News</a></li>
+    <li><a href="/contact">Contact</a></li>
+    <right><li><a href="/anmol">About</a></li></right>
+  </ul>
+       {% block body %} {% endblock body %}
+  </body>
+  </html>
+  
+  
+  
